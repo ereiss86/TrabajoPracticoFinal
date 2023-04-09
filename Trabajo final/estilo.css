@@ -1,4 +1,40 @@
-header {
+
+  
+  /* header {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  @media (max-width: 768px) {
+    header > * {
+      flex-basis: 100%;
+    }
+  }
+  
+  @media (min-width: 769px) and (max-width: 991px) {
+    header > * {
+      flex-basis: 100%;
+    }
+  }
+  
+  @media (min-width: 992px) {
+    header > * {
+      flex-basis: 100%;
+    }
+  } */
+  body {
+    background-image: url('Imagenes/Fondo.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+.cuerpe {
+  background-image: url('Imagenes/Fondo.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+/* header {
   position: fixed;
   top: 0;
   left: 0;
@@ -18,15 +54,14 @@ header .header-search input {
   width: 200px;
   border: none;
   border-bottom: 2px solid #ccc;
-  font-size: 16px;}
-
-
+  font-size: 16px;} */
+/* 
  .container_icon {
   display: flexbox;
   justify-content: space-around;
   width: 30%;
   height: 30%;
-  }
+  } */
 
   
 /*.bg-image {

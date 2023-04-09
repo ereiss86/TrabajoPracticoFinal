@@ -1,0 +1,70 @@
+
+  
+  header {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  @media (max-width: 768px) {
+    header > * {
+      flex-basis: 100%;
+    }
+  }
+  
+  @media (min-width: 769px) and (max-width: 991px) {
+    header > * {
+      flex-basis: 50%;
+    }
+  }
+  
+  @media (min-width: 992px) {
+    header > * {
+      flex-basis: 33.33%;
+    }
+  }
+
+body {
+  background-image: url('Imagenes/Fondo.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+/* 
+ .container_icon {
+  display: flexbox;
+  justify-content: space-around;
+  width: 30%;
+  height: 30%;
+  } */
+
+  
+/*.bg-image {
+  background-image: url("Imagenes/Foto\ header.jpg");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  }
+
+ul {
+  display: flex;
+  justify-content: flex-start;
+  list-style: none;
+  gap: 1mm;
+}
+
+li {
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  padding: 10px 15px;
+  background-color: #4CAF50;
+  color: white;
+  border-radius: 20px;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+}
+*/
