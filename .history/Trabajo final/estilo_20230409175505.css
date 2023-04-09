@@ -5,9 +5,10 @@
     background-position: center;
     background-repeat: no-repeat;
   }
-  .carouselExample img{
+  #carousel img{
     width: 1960px;
     height: 580px;
+    al
 }
 a:link {
   text-decoration: none;

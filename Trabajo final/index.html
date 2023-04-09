@@ -10,17 +10,20 @@
 </head>
 <body>
   <header>
-    <nav class="navbar nav-expand-md  navbar-dark bg-dark">
+<!-- barra navegación -->
+    <nav class="navbar fixed-top navbar-expand-lg  navbar-dark bg-dark position-relative">
+      <div class="container-fluid">
+        <!-- logo -->
+        <a class="navbar-brand" href="#">
+          <img src="Iconos/logo_huayra.svg" alt="HUAYRA DEPORTES" class="img-fluid mx-auto" style="max-width: 180px;"></a>
 <!-- menú hamburquesa -->
-        <button class="navbar-toggle bg-dark" type="button" data-toggle="collapse" data-target="#menuHamburguesa">
+        <button class="navbar-toggler bg-dark" type="button" data-bs-toggle="collapse" data-bs-target="#menuHamburguesa">
         <span class="navbar-toggler-icon"></span>
       </button>
-<!-- logo -->
-      <a class="navbar-brand" href="#">
-        <img src="Iconos/logo_huayra.jpg" alt="HUAYRA DEPORTES" class="img-fluid mx-auto" style="max-width: 80px;"></a>
 <!-- menú   -->
-      <div class="collapse navbar-collapse" id="menuHamburguesa">
-        <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+      <div class="collapse navbar-collapse navbar-expand-md" id="menuHamburguesa">
+<!-- cambie mr-auto por me-auto -->
+        <ul class="navbar-nav me-auto mt-1 mt-lg-0">
           <li class="nav-item active">
             <a class="nav-link" href="#">Inicio<span class="sr-only"></span></a>
           </li>
@@ -29,19 +32,23 @@
           <li class="nav-item"><a class="nav-link" href="#">Niños</a></li>
           <li class="nav-item"><a class="nav-link" href="#">Accesorios</a></li>
         </ul>
+     
 <!-- Buscador -->
-        <form class="form-inline my-2 my-lg-0 order-lg-2">
-          <input type="search" class="form-control mr-sm-2" aria-label="Buscar" placeholder="Qué estás buscando?"
-            style="width: 250px;">
+<div class="input-group">
+        <form class="d-flex my-1 my-lg-0 order-lg-2" role="search">
+          <input type="search" class="form-control me-1 mr-sm-5" aria-label="Buscar" placeholder="Qué estás buscando?"
+           >
 <!-- boton lupita -->
-          <button type="submit" class="btn btn-outline-success my-2 my-sm-0">🔎</button>
+          <button type="submit" class="btn btn-outline-success my-1 my-sm-0">🔎</button>
         </form>
+        </div>
       </div>
+    </div>
     </nav>
   </header>
-  <div class="bg-transparent" style="height: 20px; width: 100%;"></div>
+  <div class="bg-transparent" style="height: 10px; width: 100%;"></div>
 <!-- Carrousel -->
-  <main>
+  <main class="position-relative mx-3">
     <div id="carousel" class="carousel slide" data-ride="carousel" data-interval="10000">
       <div class="carousel-inner">
         <div class="carousel-item active">
@@ -72,7 +79,7 @@
   </main>
   <br>
   <!-- MENSAJE DE BIENVENIDA Articulo para atraer cliente -->
-  <article class="header-banner">
+  <article class="header-banner position-relative">
     <div class="container-fluid">
       <div class="row">
         <div class="col-lg-8 col-md-10 col-sm-12">
@@ -86,8 +93,8 @@
     </div>
   </article>
   <!-- PROMOCIÓN DE MARCAS  -->
-  <h5 class="col-lg-8 col-md-10 col-sm-12 text-light">Estas son algunas de las marcas que confian en nosotros para distribuir sus productos</h5>
-  <section class="header-buttons-container">
+  <h5 class="col-lg-8 col-md-10 col-sm-12 text-light position-relative">Estas son algunas de las marcas que confian en nosotros para distribuir sus productos</h5>
+  <section class="header-buttons-container position-relative">
     <div class="container-fluid">
       <div class="row d-flex justify-content-center spac">
         <div class="col-lg-1 col-md-3 col-sm-3 col-xs-6 mb-2 align-items-center">

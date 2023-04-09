@@ -1,13 +1,13 @@
 
-  body {
+  .bg {
     background-image: url('Imagenes/Fondobg.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
   }
-  .carouselExample img{
-    width: 1960px;
-    height: 580px;
+  #carousel img{
+    height: 90%;
+    align-items:center;
 }
 a:link {
   text-decoration: none;
