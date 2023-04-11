@@ -1,0 +1,73 @@
+
+  body {
+    background-image: url('Imagenes/Fondo.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+a:link {
+  text-decoration: none;
+}
+
+.btn:focus{
+  transform: scale(0.85);
+  outline: none;
+}
+
+.letrapequeña{
+color:aquamarine;
+font-size: 70%;
+}
+
+.linea {
+  border-top: 1px solid black;
+  height: 10px;
+  max-width: 100%;
+  padding: 0;
+  margin: 20px auto 0 auto;
+background-color: black;
+}
+
+.titulos{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.creativos{
+  text-align: center;
+  line-height: 30px;
+  letter-spacing: normal;
+  font-weight: 400;
+  color: #3c3c3c;
+}
+
+.brillitos{
+  font-size: 30px;
+  color: #fff;
+  text-shadow: 0 0 10px #fff,
+          0 0 20px #fff,
+          0 0 30px #fff,
+          0 0 40px #ff00de,
+          0 0 70px #ff00de,
+          0 0 80px #ff00de,
+          0 0 100px #ff00de,
+          0 0 150px #ff00de;
+  animation: blink 1s infinite;
+}
+.brillitos2{
+color: aquamarine;
+text-shadow:0 0 10px #fff,
+            0 0 20px #fff,
+            0 0 30px #fff,
+            0 0 40px #00ff2a,
+            0 0 70px #00ff2a,
+
+}
+@keyframes blink {
+  0% {opacity: 0;}
+  50% {opacity: 1;}
+  100% {opacity: 0;}
+}
