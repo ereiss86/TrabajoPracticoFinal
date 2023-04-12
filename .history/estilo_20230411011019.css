@@ -1,0 +1,45 @@
+
+  body {
+    background-image: url('Imagenes/Fondo.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+a:link {
+  text-decoration: none;
+}
+
+.btn:focus{
+  tra
+}
+
+.letrapequeña{
+color:aquamarine;
+font-size: 70%;
+}
+
+.linea {
+  border-top: 1px solid black;
+  height: 10px;
+  max-width: 100%;
+  padding: 0;
+  margin: 20px auto 0 auto;
+background-color: black;
+}
+
+.titulos{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.creativos{
+  text-align: center;
+ 
+  line-height: 30px;
+  letter-spacing: normal;
+  font-weight: 400;
+  color: #3c3c3c;
+}
