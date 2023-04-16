@@ -1,0 +1,35 @@
+#tarjetas{
+display: flex;
+justify-content: center;
+flex-wrap: wrap;
+}
+
+.tarjeta img{
+    width: 100%;
+    border-radius: 40px;
+   
+}
+
+.tarjeta{
+    width: 20%;
+    margin: 30px 30px 30px 30px;
+    background: #fff;
+    padding: 25px;
+    text-align: center;
+    box-shadow: 1px 1px 11px 0px #00000030;
+    border-radius: 15px;
+}
+
+.tarjeta h2{
+    font-size: 17px;
+    color: #aaa;
+}
+
+.funsion{
+    color: #ccc;
+}
+
+.texto{
+    line-height: 30px;
+    color: #808080;
+}
