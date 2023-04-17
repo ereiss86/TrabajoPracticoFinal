@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<div id="dataBank"></div>
+<body>
+    <script>
+        const dataBank = document.querySelector("#dataBank");
+    
+        fetch("https://api.estadisticasbcra.com/inflacion_mensual_oficial", {
+            headers: {
+                "Authorization": BEARER {eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3MTMxMzg4MzksInR5cGUiOiJleHRlcm5hbCIsInVzZXIiOiJlbGllbHJlaXNzQHlhaG9vLmNvbS5hciJ9.6_7q-EtL2yrk1eyNG3q8meIbVflxx5QOuvvs8mPZF9FIymPAONLy7tpPYDoz9Varv3gyG9UG9YmI0d_u_48Nfg"
+            }
+        })
+        .then(response => response.json())
+        .then(data => {
+            console.log(data);
+            data.forEach(info => {
+                const content = document.createElement("div");
+                content.innerHTML = `
+                    <h4> Al mes ${info.d}, la inflación oficial es de ${info.v}</h4>
+                `;
+                dataBank.append(content);
+            });
+        })
+        .catch(error => console.error(error));
+    </script>
+</body>
+</html>

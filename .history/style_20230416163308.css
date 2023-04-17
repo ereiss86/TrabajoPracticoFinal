@@ -19,7 +19,7 @@ scale: 1.2;
     max-width: 25vh;
     margin: 3px 3px 3px 3px;
     background: #fff;
-    padding: 15px;
+    padding: 25px;
     text-align: center;
     box-shadow: 1px 1px 11px 0px #00000030;
     border-radius: 15px;
@@ -45,18 +45,12 @@ scale: 1.2;
 
 body {
     background-image: url('Imagenes/Fondo.jpg');
-    background-color: rgba(0, 203, 14, 0.9);
+    background-color: r
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    opacity: 0.9;
+    opacity: 0.85;
   }
-#promo{
-  border-radius: 10vh;
-}  
-#lupita{
-  font-size: 1.5em;
-}
 a:link {
   text-decoration: none;
 }
@@ -66,9 +60,6 @@ a:hover{
 .btn:focus{
   transform: scale(0.85);
   outline: none;
-}
-.btn-color{
-  background-color:#015702;
 }
 .img-btn:hover{
   cursor: pointer;

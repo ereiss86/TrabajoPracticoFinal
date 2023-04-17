@@ -54,9 +54,7 @@ body {
 #promo{
   border-radius: 10vh;
 }  
-#lupita{
-  font-size: 1.5em;
-}
+#
 a:link {
   text-decoration: none;
 }
@@ -66,9 +64,6 @@ a:hover{
 .btn:focus{
   transform: scale(0.85);
   outline: none;
-}
-.btn-color{
-  background-color:#015702;
 }
 .img-btn:hover{
   cursor: pointer;

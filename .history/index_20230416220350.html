@@ -58,7 +58,6 @@
       <div>
 
       </div>
-      <div class="text-light" id="dataBank"></div>
       <!-- </div> -->
     </nav>
   </header>
@@ -198,7 +197,7 @@
       <!-- <button type="submit" class="btn btn-outline-success mt-5 my-sm-2"
         onclick="enviarConsulta()">Enviar</button> -->
         <div class="col-12">
-          <button class="btn btn-primary btn-color" type="submit"><font style="vertical-align: inherit;">
+          <button class="btn btn-primary btn" type="submit"><font style="vertical-align: inherit;">
             <font style="vertical-align: inherit;">Enviar formulario</font></font></button>
         </div>
     </form>
@@ -293,31 +292,7 @@
     </div>
 
   </footer>
-  <script>
-    var dataBank = document.querySelector("#dataBank");
-    const date = '2023-02-27';
-    console.log(date)
-    fetch("https://api.estadisticasbcra.com/usd", {
-        headers: {
-            Authorization: 
-            "BEARER eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3MTMxMzg4MzksInR5cGUiOiJleHRlcm5hbCIsInVzZXIiOiJlbGllbHJlaXNzQHlhaG9vLmNvbS5hciJ9.6_7q-EtL2yrk1eyNG3q8meIbVflxx5QOuvvs8mPZF9FIymPAONLy7tpPYDoz9Varv3gyG9UG9YmI0d_u_48Nfg"
-        },
-    })
-    .then((response) => response.json())
-    .then((data)=>{
-      console.log(data)
-
-      data.forEach((info) =>{
-        if (info.d == date.toString()){
-        const content = document.createElement("div")
-        content.innerHTML = `
-        <h4> La cotizacion del dolar es ${info.v}</h4>
-        `
-        dataBank.append(content)}
-        
-      })
-    });
-  </script>
+  
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
     crossorigin="anonymous"></script>

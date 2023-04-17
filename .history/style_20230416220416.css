@@ -67,9 +67,7 @@ a:hover{
   transform: scale(0.85);
   outline: none;
 }
-.btn-color{
-  background-color:#015702;
-}
+.btn-
 .img-btn:hover{
   cursor: pointer;
   transform:scale(1.1);
