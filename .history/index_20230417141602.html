@@ -22,7 +22,7 @@
     <!-- barra navegación -->
     <nav
       class="navbar fixed-top navbar-expand-md navbar-dark bg-dark container-fluid justify-content-between position-relative degrade">
-      <div class="container-fluid justify-content-between">
+      <!-- <div class="container-fluid justify-content-between"> -->
       <div class="d-flex flex-row">
         <!-- logo -->
         <a class="navbar-brand" href="index.html">
@@ -49,9 +49,9 @@
               <a class="nav-link" href="index.html">INICIO<span class="sr-only"></span></a>
             </li>
             <li class="nav-item"><a class="nav-link" href="wizard.html">Wizard</a></li>
-            <li class="nav-item"><a class="nav-link" href="#tarjetas">Personal</a></li>
-            <li class="nav-item"><a class="nav-link" href="#formContact">Formulario</a></li>
-            <li class="nav-item"><a class="nav-link" href="#foot">Footer</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Mujeres</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Niños</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Accesorios</a></li>
           </ul>
         </div>
       </div>
@@ -59,7 +59,7 @@
 
       </div>
       <div class="text-light" id="dataBank"></div>
-      </div>
+      <!-- </div> -->
     </nav>
   </header>
   <!-- margen estetico -->
@@ -142,14 +142,14 @@
         disponibles. </p>
     </div>
     <div class="tarjeta col-lg-1 col-md-6 col-sm-12 pb-2 ">
-      <img src="./Imagenes/Hector.jpeg" alt="Foto_User">
+      <img src="./Imagenes/usuario.png" alt="Foto_User">
       <h2>Héctor Walczak Flores</h2>
       <p class="funsion">Gerente</p>
       <p class="texto">Mi funsión es asegurarme de que la tienda este en condiciones de operar y que los empleados
         esten capacitados para cumplir su rol. </p>
     </div>
     <div class="tarjeta col-lg-1 col-md-6 col-sm-12 pb-2 ">
-      <img src="./Imagenes/Giselle.jpeg" alt="Foto_User">
+      <img src="./Imagenes/usuario.png" alt="Foto_User">
       <h2>Giselle Villarreal Galvez</h2>
       <p class="funsion">Vendedora</p>
       <p class="texto">Asesorar al cliente en sus consultas, ofreciendole toda la información de los productos
@@ -165,7 +165,7 @@
   </section>
   
   <!-- FORMULARIO DE CONTACTO -->
-  <hr id="formContact" class="border-0 bg-transparent">
+  <hr class="border-0 bg-transparent">
   <!-- <div class="d-flex flex-row"> -->
   <div class="container-fluid col-lg-6 text-light">
     <h1>Si nos dejas un mensaje tendras un 25% de descuento en tu próxima compra</h1>
@@ -198,7 +198,8 @@
       <!-- <button type="submit" class="btn btn-outline-success mt-5 my-sm-2"
         onclick="enviarConsulta()">Enviar</button> -->
         <div class="col-12">
-          <button class="btn btn-primary btn-color" type="submit">Enviar formulario</button>
+          <button class="btn btn-primary btn-color" type="submit"><font style="vertical-align: inherit;">
+            <font style="vertical-align: inherit;">Enviar formulario</font></font></button>
         </div>
     </form>
     <p class="letrapequeña">**Al dejar tu correo habilitas a que podamos responderte al mail indicado para enviarte
@@ -246,9 +247,108 @@
       </div>
     </div>
   </section>
+  <!-- FORMULARIO DE CONTACTO -->
+  <hr class="border-0 bg-transparent">
+   <!-- <div class="d-flex flex-row"> -->
+    <div class="container-fluid col-lg-6 text-light">
+      <h1>Si nos dejas un mensaje tendras un 25% de descuento en tu próxima compra</h1>
+      <h2>Deja tu mensaje en el siguiente formulario</h2>
+      <!-- <form action="mailto:grupo8@utn.com" method="post" enctype="text/plain"> -->
+      <form>
+        <div class="form-group">
+          <label for="name">Nombre:</label>
+          <input type="text" class="form-control" id="name" name="name" required>
+        </div>
+        <div class="form-group">
+          <label for="email">Correo electrónico:</label>
+          <input type="email" class="form-control" id="email" name="email" onblur="mailOnblur()" required>
+        </div>
+        <div class="form-group">
+          <label for="subject">Asunto:</label>
+          <input type="text" class="form-control" id="subject" name="subject" required>
+        </div>
+        <div class="form-group">
+          <label for="message">Mensaje:</label>
+          <textarea class="form-control" id="message" name="message" rows="6" required></textarea>
+        </div>
+        <button type="submit" class="btn btn-outline-success text-end mt-4 my-sm-1" onclick="enviarConsulta()">Enviar</button>
+      </form>
+      <p class="letrapequeña">**Al dejar tu correo habilitas a que podamos responderte al mail indicado para enviarte
+        futuras ofertas!!!</p>
+    </div>
+    <!-- PRESENTACIÓN PERSONAL -->
+    <section class="justify-content-around position-relative" id="tarjetas">
+      <div class="tarjeta col-lg-1 col-md-6 col-sm-12 pb-2 ">
+        <img src="./Imagenes/Luis.jpeg" alt="Foto_Luis">
+        <h2>Luis Simón Sosa</h2>
+        <p class="funsion">Dueño del local</p>
+        <p class="texto">Mi sueño es trasnmitirle a toda la gente mi pasión por el deporte, y que en la tienda ecuentren
+          todo lo necesario para desarrollar su actividad preferida.</p>
+      </div>
+      <div class="tarjeta col-lg-1 col-md-6 col-sm-12 pb-2 ">
+        <img src="./Imagenes/Eliel.jpeg" alt="Foto_Eliel">
+        <h2>Salomón Eliel Reiss</h2>
+        <p class="funsion">Cajero</p>
+        <p class="texto">Encargado del cobro a los clientes e informarle de los descuentos disponibles. </p>
+      </div>
+      <div class="tarjeta col-lg-1 col-md-6 col-sm-12 pb-2 ">
+        <img src="./Imagenes/Selva1.jpg" alt="Foto_Selva">
+        <h2>Selva López Olivera</h2>
+        <p class="funsion">Vendedora</p>
+        <p class="texto">Asesorar al cliente en sus consultas, ofreciendole toda la información de los productos
+          disponibles. </p>
+      </div>
+      <div class="tarjeta col-lg-1 col-md-6 col-sm-12 pb-2 ">
+        <img src="./Imagenes/Hector.jpeg" alt="Foto_User">
+        <h2>Héctor Walczak Flores</h2>
+        <p class="funsion">Gerente</p>
+        <p class="texto">Mi funsión es asegurarme de que la tienda este en condiciones de operar y que los empleados
+          esten capacitados para cumplir su rol. </p>
+      </div>
+      <div class="tarjeta col-lg-1 col-md-6 col-sm-12 pb-2 ">
+        <img src="./Imagenes/Giselle.jpeg" alt="Foto_User">
+        <h2>Giselle Villarreal Galvez</h2>
+        <p class="funsion">Vendedora</p>
+        <p class="texto">Asesorar al cliente en sus consultas, ofreciendole toda la información de los productos
+          disponibles. </p>
+      </div>
+      <div class="tarjeta col-lg-1 col-md-6 col-sm-12 pb-2 ">
+        <img src="./Imagenes/Maxi.jpeg" alt="Foto_Maxi">
+        <h2>Maximilano Carrizo</h2>
+        <p class="funsion">Vendedor</p>
+        <p class="texto">Asesorar al cliente en sus consultas, ofreciendole toda la información de los productos
+          disponibles. </p>
+      </div>
+
+    </section>
+    <script>
+      var dataBank = document.querySelector("#dataBank");
+      const date = '2023-02-27';
+      console.log(date)
+      fetch("https://api.estadisticasbcra.com/usd", {
+          headers: {
+              Authorization: 
+              "BEARER eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3MTMxMzg4MzksInR5cGUiOiJleHRlcm5hbCIsInVzZXIiOiJlbGllbHJlaXNzQHlhaG9vLmNvbS5hciJ9.6_7q-EtL2yrk1eyNG3q8meIbVflxx5QOuvvs8mPZF9FIymPAONLy7tpPYDoz9Varv3gyG9UG9YmI0d_u_48Nfg"
+          },
+      })
+      .then((response) => response.json())
+      .then((data)=>{
+        console.log(data)
+
+        data.forEach((info) =>{
+          if (info.d == date.toString()){
+          const content = document.createElement("div")
+          content.innerHTML = `
+          <h4> La cotizacion del dolar es ${info.v}</h4>
+          `
+          dataBank.append(content)}
+          
+        })
+      });
+    </script>
   <!-- </div> -->
   <!--FOOTER  -->
-  <footer id="foot" class="bg-dark text-light py-4">
+  <footer class="bg-dark text-light py-4">
     <div class="container">
       <div class="row">
         <div class="col-md-4">

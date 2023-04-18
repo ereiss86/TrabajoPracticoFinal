@@ -17,12 +17,13 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery.formwizard/3.0.4/jquery.formwizard.min.css">
     <link rel="stylesheet" type="text/css" href="style.css">
 </head>
+
 <body>
   <header>
     <!-- barra navegación -->
     <nav
-      class="navbar fixed-top navbar-expand-md navbar-dark bg-dark container-fluid position-relative degrade">
-      <div class="container-fluid justify-content-between">
+      class="navbar fixed-top navbar-expand-md navbar-dark bg-dark container-fluid justify-content-between position-relative degrade">
+      <!-- <div class="container-fluid justify-content-between"> -->
       <div class="d-flex flex-row">
         <!-- logo -->
         <a class="navbar-brand" href="index.html">
@@ -49,9 +50,9 @@
               <a class="nav-link" href="index.html">INICIO<span class="sr-only"></span></a>
             </li>
             <li class="nav-item"><a class="nav-link" href="wizard.html">Wizard</a></li>
-            <li class="nav-item"><a class="nav-link" href="#tarjetas">Personal</a></li>
-            <li class="nav-item"><a class="nav-link" href="#formContact">Formulario</a></li>
-            <li class="nav-item"><a class="nav-link" href="#foot">Footer</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Mujeres</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Niños</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Accesorios</a></li>
           </ul>
         </div>
       </div>
@@ -59,14 +60,64 @@
 
       </div>
       <div class="text-light" id="dataBank"></div>
-      </div>
+      <!-- </div> -->
     </nav>
   </header>
+
+</head>
+
+<body>
+    <header>
+        <!-- barra navegación -->
+        <nav class="navbar fixed-top navbar-expand-md navbar-dark bg-dark position-relative">
+            <div class="container-fluid justify-content-between">
+                <div class="d-flex flex-row">
+                    <!-- logo -->
+                    <a class="navbar-brand" href="#">
+                        <img src="Iconos/logo_huayra.svg" alt="HUAYRA DEPORTES" class="img-fluid mx-auto"
+                            style="max-width: 150px;"></a>
+                    <!-- Buscador -->
+                    <div class="input-group">
+                        <form class="d-flex my-1 order-lg-2" role="search">
+                            <input type="search" class="form-control me-1 mr-sm-5" aria-label="Buscar"
+                                placeholder="Qué estás buscando?">
+                            <!-- boton lupita -->
+                            <button type="submit" class="btn btn-outline-success my-1">🔎</button>
+                        </form>
+                    </div>
+                </div>
+                <div>
+                    <!-- menú hamburquesa -->
+                    <button class="navbar-toggler bg-dark" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#menuHamburguesa">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <!-- menú   -->
+                    <div class="collapse navbar-collapse navbar-expand-md" id="menuHamburguesa">
+                        <ul class="navbar-nav me-auto mt-1 mt-lg-0">
+                            <li class="nav-item active">
+                                <a class="nav-link" href="index.html">INICIO<span class="sr-only"></span></a>
+                            </li>
+                            <li class="nav-item"><a class="nav-link" href="#">Hombres</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#">Mujeres</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#">Niños</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#">Accesorios</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div>
+
+                </div>
+            </div>
+        </nav>
+    </header>
     <!-- margen estetico -->
     <hr class="border-0 bg-transparent">
     <div style="height: 5px; width: 100%;"></div>
     <!-- Formulario -->
-      <div class="container mt-5">
+  
+
+    <div class="container mt-5">
         <div class="row d-flex justify-content-center align-items-center">
             <div class="col-md-6">
                 <form id="regForm">
