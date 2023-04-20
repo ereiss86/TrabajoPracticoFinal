@@ -118,7 +118,7 @@ function validateForm() {
   }
   return valid;
 }
-
+/*
 $("#regForm").validate({
   rules: {
     email: {
@@ -126,7 +126,7 @@ $("#regForm").validate({
       email: true
     }
   }
-});
+});*/
 
 function fixStepIndicator(n) {
   var i,
