@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>Formulario con validación de input</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+</head>
+<body>
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-6 col-sm-offset-3">
+				<h2>Formulario con validación de input</h2>
+				<form id="myForm">
+					<div class="form-group">
+						<label for="nombre">Nombre:</label>
+						<input onblur="onblur()" type="text" class="form-control" id="nombre1" name="nombre" placeholder="Ingresa tu nombre">
+					</div>
+					<div class="form-group">
+						<label for="email">Email:</label>
+						<input onblur="onblur()" type="email" class="form-control" id="email1" name="email" placeholder="Ingresa tu email">
+					</div>
+					<div class="form-group">
+						<label for="telefono">Teléfoeo:</label>
+						<input onblur="onblur()" type="tel" class="form-control" id="telefono1" name="telefono" placeholder="Ingresa tu teléfono">
+					</div>
+					<button type="submit" class="btn btn-primary">Enviar</button>
+				</form>
+			</div>
+		</div>
+	</div>
+
+	<script src="scr.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</script>
+<!-- 
+	// $(document).ready(function(){
+	// 	$('#myForm').submit(function(event){
+	// 		event.preventDefault(); // Evita que se recargue la página
+
+	// 		// Validación de input utilizando expresiones regulares
+	// 		var regexNombre = /^[a-zA-Z\s]+$/; // Solo letras y espacios
+	// 		var regexEmail = /^\S+@\S+\.\S+$/; // Formato de correo electrónico
+	// 		var regexTelefono = /^\d{10}$/; // 10 dígitos
+
+	// 		// Obtener los valores de los inputs
+	// 		var nombre = $('#nombre').val();
+	// 		var email = $('#email').val();
+	// 		var telefono = $('#telefono').val();
+
+	// 		// Validar cada input y mostrar un mensaje de error si es necesario
+	// 		if (!regexNombre.test(nombre)) {
+	// 			alert('Por favor ingresa un nombre válido');
+	// 		} else if (!regexEmail.test(email)) {
+	// 			alert('Por favor ingresa un correo electrónico válido');
+	// 		} else if (!regexTelefono.test(telefono)) {
+	// 			alert('Por favor ingresa un número de teléfono válido');
+	// 		} else {
+	// 			alert('¡Formulario enviado!');
+	// 			$('#myForm')[0].reset(); // Limpiar el formulario
+	// 		}
+	// 	});
+	// }); -->
+	
+</body>
+</html>

@@ -1,0 +1,11 @@
+
+   {
+    background-image: url('Imagenes/Fondobg.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+a:link {
+  text-decoration: none;
+}

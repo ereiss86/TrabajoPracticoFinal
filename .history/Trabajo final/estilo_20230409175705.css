@@ -1,0 +1,14 @@
+
+  .bgHome {
+    background-image: url('Imagenes/Fondobg.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  #carousel img{
+    height: 90%;
+    align-items:center;
+}
+a:link {
+  text-decoration: none;
+}

@@ -1,0 +1,14 @@
+
+  body {
+    background-image: url('Imagenes/Fondobg.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  .carousel img{
+    width: 1960px;
+    height: 580px;
+}
+a:link {
+  text-decoration: none;
+}

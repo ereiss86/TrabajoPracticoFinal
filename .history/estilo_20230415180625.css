@@ -1,0 +1,240 @@
+
+  body {
+    background-image: url('Imagenes/Fondo.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+a:link {
+  text-decoration: none;
+}
+
+.btn:focus{
+  transform: scale(0.85);
+  outline: none;
+}
+
+.img-btn:hover{
+  cursor: pointer;
+}
+.img-btn:focus{
+  transform: sc;
+}
+
+.letrapequeña{
+color:aquamarine;
+font-size: 70%;
+}
+
+.linea {
+  border-top: 1px solid black;
+  height: 10px;
+  max-width: 100%;
+  padding: 0;
+  margin: 20px auto 0 auto;
+background-color: black;
+}
+
+.titulos{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.creativos{
+  text-align: center;
+  line-height: 30px;
+  letter-spacing: normal;
+  font-weight: 400;
+  color: #3c3c3c;
+}
+
+.brillitos{
+  font-size: 30px;
+  color: #fff;
+  text-shadow: 0 0 10px #fff,
+          0 0 20px #fff,
+          0 0 30px #fff,
+          0 0 40px #0DD50D,
+          0 0 70px #0DD50D,
+          0 0 80px #0DD50D,
+          0 0 100px #0DD50D,
+          0 0 150px #0DD50D;
+  animation: brilla 1s infinite;
+}
+.brillitos2{
+color: rgb(248, 248, 248);
+text-shadow:0 0 10px #fff,
+            0 0 20px #fff,
+            0 0 30px #fff,
+            0 0 40px #0DD50D,
+            0 0 70px #0DD50D,
+            0 0 80px #0DD50D;
+animation: brilla 5s alternate-reverse;            
+
+}
+@keyframes brilla {
+  0% {opacity: 0;}
+  50% {opacity: 1;}
+  100% {opacity: 0;}
+}
+
+.degrade{
+  background: linear-gradient(black,rgb(0, 89, 0),black);
+  height: 100%;
+}
+/* prueba wizard
+#form-container div:not(:first-child){
+  display:none;
+}*/
+
+
+
+/*formulario wizard*/
+.men{
+  font-size: 20px;
+  text-align: center;
+}
+
+.formtitulo{
+  text-align: center;
+  font-size: 22px;
+}
+
+#regForm {
+  background-color: #ffffff;
+  margin: 0px auto;
+  font-family: Raleway;
+  padding: 40px;
+  border-radius: 10px
+}
+
+h1 {
+  text-align: center
+}
+
+input {
+  padding: 10px;
+  width: 100%;
+  font-size: 17px;
+  font-family: Raleway;
+  border: 1px solid #aaaaaa
+}
+
+textarea {
+  padding: 10px;
+  width: 100%;
+  font-size: 17px;
+  font-family: Raleway;
+  border: 1px solid #aaaaaa
+}
+
+input.invalid {
+  background-color: #ffdddd
+}
+
+.tab {
+  display: none
+}
+
+button {
+  background-color: #4CAF50;
+  color: #ffffff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 17px;
+  font-family: Raleway;
+  cursor: pointer
+}
+
+button:hover {
+  opacity: 0.8
+}
+
+#prevBtn {
+  background-color: #bbbbbb
+}
+
+.step {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbbbbb;
+  border: none;
+  border-radius: 50%;
+  display: inline-block;
+  opacity: 0.5
+}
+
+.step.active {
+  opacity: 1
+}
+
+.step.finish {
+  background-color: #4CAF50
+}
+
+.all-steps {
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 30px
+}
+
+.finalizar {
+  display: none
+}
+
+.container {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.container input[type="radio"] {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #eee;
+  border-radius: 50%;
+}
+
+.container:hover input~.checkmark {
+  background-color: #ccc;
+}
+
+.container input:checked~.checkmark {
+  background-color: #2196F3;
+}
+
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.container input:checked~.checkmark:after {
+  display: block;
+}
+
+.container .checkmark:after {
+  top: 9px;
+  left: 9px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: white;
+}
